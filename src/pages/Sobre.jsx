@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import "./Sobre.css";
+import psicologa from "../assets/psicologa.jpeg";
 
 function Sobre() {
   return (
     <section className="sobre">
-
       <div className="sobre-container">
 
         <motion.div
@@ -14,10 +14,9 @@ function Sobre() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <img src="src/assets/psicologa.jpeg" />
+          <img src={psicologa} alt="Psicóloga" />
         </motion.div>
 
-    
         <motion.div
           className="sobre-conteudo"
           initial={{ opacity: 0, x: 60 }}
@@ -45,7 +44,6 @@ function Sobre() {
             compreensão sobre comportamento humano em diferentes contextos.
           </p>
 
-          {/* BLOCO DE FORMAÇÃO */}
           <div className="formacao-box">
             <h3>Formação e Especializações</h3>
             <ul>
@@ -59,12 +57,10 @@ function Sobre() {
         </motion.div>
 
       </div>
-
     </section>
   );
 }
 
 export default Sobre;
-
 
 
