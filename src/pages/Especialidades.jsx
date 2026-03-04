@@ -80,7 +80,12 @@ function Especialidades() {
           description="Desenvolvimento de confiança e segurança em interações sociais e ambientes profissionais."
           extra="Treino de Assertividade • Comunicação"
         />
-
+        <Card
+          icon={<HeartHandshake size={30} />}
+          title="Exaustão Mental"
+          description="Fortalecimento da capacidade de enfrentar desafios e manter equilíbrio emocional em ambientes exigentes."
+          extra="Gestão de Estresse • Autoconfiança"
+        />
       </div>
     </div>
   )
